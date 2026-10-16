@@ -17,7 +17,7 @@
     },
     {
       "title": "Crater Lake",
-      "category": "Landscape",
+      "category": "Crater Lake National Park",
       "url": "photos/Crator Lake 2.JPG"
     },
     {
@@ -29,6 +29,21 @@
       "title": "White Mountain Trees",
       "category": "Landscape",
       "url": "/photos/IMG_0032 - Copy.JPG"
+    },
+    {
+      "title": "Flower",
+      "category": "Landscape",
+      "url": "/photos/IMG_0412.JPG"
+    },
+    {
+      "title": "Mount Hood",
+      "category": "Landscape",
+      "url": "/photos/IMG_0748.JPG"
+    },
+    {
+      "title": "Crater Lake Park",
+      "category": "Crater Lake National Park",
+      "url": "/photos/IMG_0753.JPG"
     }
   ]
 }
