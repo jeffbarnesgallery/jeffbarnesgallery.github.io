@@ -49,6 +49,21 @@ header .view-links a[aria-current="page"]{border-bottom:2px solid var(--pink)}
 .photo-roll #status:empty{display:none}
 .photo-roll .photo:focus-visible{outline:3px solid var(--pink);outline-offset:-4px}
 @media(max-width:700px){.photo-roll{--roll-header:84px}header .view-links{gap:14px}header .view-links a{font-size:12px}}
+
+/* Quiet header and gentle transitions while scrolling the photo roll. */
+.photo-roll{background:#000}
+.photo-roll header{background:#000;color:#fff;border-bottom-color:#222}
+.photo-roll header .brand small,.photo-roll header a{color:#fff}
+.photo-roll header a:focus-visible{outline-color:#add8e6}
+.photo-roll #grid,.photo-roll #grid .photo,.photo-roll #grid .image-wrap{background:#000}
+html:has(.photo-roll){scroll-snap-type:y proximity;scroll-padding-top:96px}
+.photo-roll #grid .photo{scroll-snap-align:start;scroll-margin-top:0}
+@supports(animation-timeline:view()){
+ @keyframes roll-fade{0%{opacity:.25}25%,75%{opacity:1}100%{opacity:.25}}
+ .photo-roll #grid .image-wrap{animation:roll-fade linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+}
+@media(max-width:700px){html:has(.photo-roll){scroll-padding-top:84px}}
+@media(prefers-reduced-motion:reduce){html:has(.photo-roll){scroll-behavior:auto;scroll-snap-type:none}.photo-roll #grid .image-wrap{animation:none}}
 </style>
 </head><body class="photo-roll">
 <header><a class="brand" href="./">Jeff Barnes<small>PHOTOGRAPHY</small></a><nav class="view-links" aria-label="Main navigation"><a href="./" aria-current="page">Photo roll</a><a href="./portfolio.html">Portfolio grid</a></nav></header>
