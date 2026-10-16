@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jeffbarnesgallery/jeffbarnesgallery.github.io
   branch: main
-  # Replace after the authentication service is deployed. Never store a secret here.
+  # Authentication secrets are stored only in Cloudflare.
   base_url: https://jeffbarnesgallery-auth.jeff-roam.workers.dev
   auth_endpoint: auth
   auth_scope: public_repo
@@ -28,6 +28,7 @@ collections:
           - name: photos
             label: Photographs
             widget: list
+            required: false
             summary: '{{fields.title}} · {{fields.category}}'
             fields:
               - { name: title, label: Caption, widget: string }
