@@ -1,3 +1,24 @@
 {
-  "photos": []
+  "photos": [
+    {
+      "title": "Idaho Sunset",
+      "category": "Landscape",
+      "url": "photos/IMG_0872.JPG"
+    },
+    {
+      "title": "Olympic Park Waterfall",
+      "category": "Landscape",
+      "url": "photos/IMG_0399.JPG"
+    },
+    {
+      "title": "Centipede",
+      "category": "Landscape",
+      "url": "photos/centipede.JPG"
+    },
+    {
+      "title": "Crater Lake",
+      "category": "Landscape",
+      "url": "photos/Crator Lake 2.JPG"
+    }
+  ]
 }
