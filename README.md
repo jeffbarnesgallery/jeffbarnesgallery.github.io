@@ -1,13 +1,20 @@
 # Jeff Barnes Gallery
 
-A public photography portfolio with an owner editor prepared for GitHub Pages.
+Public gallery: https://jeffbarnesgallery.github.io/
+Owner studio: https://jeffbarnesgallery.github.io/admin/
 
-Planned public address: https://jeffbarnesgallery.github.io/
-Planned owner editor: https://jeffbarnesgallery.github.io/admin/
-Repository to create: jeffbarnesgallery/jeffbarnesgallery.github.io
+The gallery is public. The owner studio requires GitHub sign-in and repository write access before changes can be saved.
 
-These addresses have not been published yet. Complete OWNER-SETUP.md before deployment. Authentication has an explicit placeholder until the sign-in service is configured. The editor is not working until an owner login, upload, publication, and unauthorized-account check all succeed.
+## Add a photograph
 
-Place index.html, app.js, photos.json, photos/, admin/, and .nojekyll at the root of the public website repository. No credentials belong here. The public gallery retains the existing design; Sveltia CMS provides owner editing and GitHub enforces repository write permissions.
+1. Open the owner studio and choose Sign in with GitHub.
+2. Open My gallery, then Photographs.
+3. Add a photograph entry, enter its caption and collection, and select/upload its image.
+4. Save or publish the entry, following the editor's prompts.
+5. Wait for GitHub Pages to republish, then refresh the public gallery.
 
-The gallery starts empty. Use web-sized JPG, PNG, WebP, or GIF images. The editor has a 4 MB image limit. Original photos and existing Netlify account records were not in the supplied deployment and have not been migrated.
+The photo list is stored in photos.json, and images are stored under photos/. The editor is configured for web-sized JPG, PNG, WebP, and GIF files up to 4 MB. Keep original-resolution images separately. Repository contents and published photographs are public.
+
+Sign-in is provided by Sveltia CMS and an authentication Worker in the owner's Cloudflare account. Secrets are stored encrypted in Cloudflare, never in this repository. Publishing uses GitHub Pages. No custom domain is required.
+
+Only invite trusted editors to this repository. Removing a photograph from the photo list hides it from the gallery, but uploaded files and earlier Git history can remain public.
