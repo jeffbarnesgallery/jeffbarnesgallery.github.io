@@ -27,13 +27,15 @@ h2,.empty h3,.caption,.modal h2{font-family:Helvetica,Arial,sans-serif;font-weig
 
 /* Titles appear only in the enlarged viewer. */
 #grid .caption{display:none}
+
+#gallery{padding-top:36px}#collection-title{margin:13px 0;letter-spacing:-.5px}#collection-title sup{font:11px Arial;color:var(--muted);vertical-align:top;margin-left:7px}
 </style>
 </head><body>
 <header><a class="brand" href="#">Jeff Barnes<small>PHOTOGRAPHY</small></a><nav aria-label="Main navigation"><a href="#gallery">Portfolio</a></nav></header>
 <main>
 
-<section class="intro"><h1>Jeff Barnes<span>Photography</span></h1><div class="intro-bottom"><p>A selection of photographs.</p><a href="#gallery">View portfolio ↓</a></div></section>
-<section id="gallery" aria-labelledby="collection-title"><div class="collection-top"><div><h2 id="collection-title">Portfolio <sup id="count">00</sup></h2></div><input class="search" id="search" type="search" aria-label="Search photos" placeholder="Search photographs"></div>
+
+<section id="gallery" aria-labelledby="collection-title"><div class="collection-top"><div><h1 id="collection-title">Portfolio <sup id="count">00</sup></h1></div><input class="search" id="search" type="search" aria-label="Search photos" placeholder="Search photographs"></div>
 <div class="filters" id="filters" aria-label="Filter by collection"></div>
 <div id="loading" class="loading" role="status">Loading photographs…</div>
 <div class="empty" id="empty" hidden><div class="eyebrow">JEFF BARNES PHOTOGRAPHY</div><h3>New work coming soon.</h3><p>Photographs appear here as they are published.</p></div>
