@@ -16,19 +16,9 @@
       "url": "photos/centipede.JPG"
     },
     {
-      "title": "Crater Lake",
+      "title": "Crater Lake Park",
       "category": "Crater Lake National Park",
-      "url": "photos/Crator Lake 2.JPG"
-    },
-    {
-      "title": "Lighthouse",
-      "category": "Landscape",
-      "url": "photos/IMG_01481.jpg"
-    },
-    {
-      "title": "White Mountain Trees",
-      "category": "Landscape",
-      "url": "/photos/IMG_0032 - Copy.JPG"
+      "url": "/photos/IMG_0753.JPG"
     },
     {
       "title": "Flower",
@@ -36,14 +26,24 @@
       "url": "/photos/IMG_0412.JPG"
     },
     {
+      "title": "Lighthouse",
+      "category": "Landscape",
+      "url": "photos/IMG_01481.jpg"
+    },
+    {
+      "title": "Crater Lake",
+      "category": "Crater Lake National Park",
+      "url": "photos/Crator Lake 2.JPG"
+    },
+    {
       "title": "Mount Hood",
       "category": "Landscape",
       "url": "/photos/IMG_0748.JPG"
     },
     {
-      "title": "Crater Lake Park",
-      "category": "Crater Lake National Park",
-      "url": "/photos/IMG_0753.JPG"
+      "title": "White Mountain Trees",
+      "category": "Landscape",
+      "url": "/photos/IMG_0032 - Copy.JPG"
     }
   ]
 }
