@@ -7,6 +7,7 @@ backend:
   auth_endpoint: auth
   auth_scope: public_repo
 
+
 site_url: https://jeffbarnesgallery.github.io
 display_url: https://jeffbarnesgallery.github.io
 media_folder: photos
@@ -14,7 +15,8 @@ public_folder: photos
 media_libraries:
   default:
     config:
-      max_file_size: 4194304
+      max_file_size: 20971520
+
 
 collections:
   - name: portfolio
@@ -34,3 +36,4 @@ collections:
               - { name: title, label: Caption, widget: string }
               - { name: category, label: Collection, widget: string, default: Portfolio }
               - { name: url, label: Photograph, widget: image, choose_url: false }
+
