@@ -13,7 +13,9 @@ The gallery is public. The owner studio requires GitHub sign-in and repository w
 4. Save or publish the entry, following the editor's prompts.
 5. Wait for GitHub Pages to republish, then refresh the public gallery.
 
-The photo list is stored in photos.json, and images are stored under photos/. The editor is configured for web-sized JPG, PNG, WebP, and GIF files up to 4 MB. Keep original-resolution images separately. Repository contents and published photographs are public.
+The photo list is stored in photos.json, and images are stored under photos/. The editor accepts JPG, PNG, WebP, and GIF files up to 20 MB. Keep original-resolution images separately. Repository contents and published photographs are public.
+
+If uploading directly through GitHub, use jeffbarnesgallery/jeffbarnesgallery.github.io, upload images into photos/, and add their exact filenames, captions, and collections to photos.json. Uploading a file alone does not add a gallery entry. The older jeffreybarnes207-droid/Photography repository publishes a separate website.
 
 Sign-in is provided by Sveltia CMS and an authentication Worker in the owner's Cloudflare account. Secrets are stored encrypted in Cloudflare, never in this repository. Publishing uses GitHub Pages. No custom domain is required.
 
