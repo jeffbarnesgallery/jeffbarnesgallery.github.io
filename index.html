@@ -31,9 +31,27 @@ h2,.empty h3,.caption,.modal h2{font-family:Helvetica,Arial,sans-serif;font-weig
 #gallery{padding-top:36px}#collection-title{margin:13px 0;letter-spacing:-.5px}#collection-title sup{font:11px Arial;color:var(--muted);vertical-align:top;margin-left:7px}
 
 header .brand{font-size:26px}header .brand small{font-size:11px}@media(max-width:700px){header .brand{font-size:22px}header .brand small{font-size:10px}}
+
+/* Two public views share the same photographs and viewer. */
+header .view-links{display:flex;gap:22px;align-items:center}
+header .view-links a{display:block;font-size:13px;padding:10px 0}
+header .view-links a[aria-current="page"]{border-bottom:2px solid var(--pink)}
+.photo-roll{--roll-header:96px}
+.photo-roll header{position:sticky;top:0;z-index:10;background:var(--surface);height:var(--roll-header);max-width:none;padding:16px 4%}
+.photo-roll main{max-width:none;padding:0}
+.photo-roll #gallery{padding-top:0}
+.photo-roll .collection-top,.photo-roll #filters{display:none}
+.photo-roll #grid{display:flex;flex-direction:column;gap:12px;columns:auto;background:#111}
+.photo-roll #grid .photo{height:calc(100vh - var(--roll-header));height:calc(100svh - var(--roll-header));width:100%;margin:0;display:block;padding:0;background:#111}
+.photo-roll #grid .image-wrap{height:100%;width:100%;background:#111;display:flex;align-items:center;justify-content:center}
+.photo-roll #grid img{width:100%;height:100%;object-fit:contain;transform:none}
+.photo-roll #loading{padding:32px 4%}
+.photo-roll #status:empty{display:none}
+.photo-roll .photo:focus-visible{outline:3px solid var(--pink);outline-offset:-4px}
+@media(max-width:700px){.photo-roll{--roll-header:84px}header .view-links{gap:14px}header .view-links a{font-size:12px}}
 </style>
-</head><body>
-<header><a class="brand" href="#">Jeff Barnes<small>PHOTOGRAPHY</small></a><nav aria-label="Main navigation"><a href="#gallery">Portfolio</a></nav></header>
+</head><body class="photo-roll">
+<header><a class="brand" href="./">Jeff Barnes<small>PHOTOGRAPHY</small></a><nav class="view-links" aria-label="Main navigation"><a href="./" aria-current="page">Photo roll</a><a href="./portfolio.html">Portfolio grid</a></nav></header>
 <main>
 
 
