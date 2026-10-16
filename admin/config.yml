@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: jeffbarnesgallery/jeffbarnesgallery.github.io
+  branch: main
+  # Replace after the authentication service is deployed. Never store a secret here.
+  base_url: https://jeffbarnesgallery-auth.jeff-roam.workers.dev
+  auth_endpoint: auth
+  auth_scope: public_repo
+
+site_url: https://jeffbarnesgallery.github.io
+display_url: https://jeffbarnesgallery.github.io
+media_folder: photos
+public_folder: photos
+media_libraries:
+  default:
+    config:
+      max_file_size: 4194304
+
+collections:
+  - name: portfolio
+    label: My gallery
+    files:
+      - name: photographs
+        label: Photographs
+        file: photos.json
+        format: json
+        fields:
+          - name: photos
+            label: Photographs
+            widget: list
+            summary: '{{fields.title}} · {{fields.category}}'
+            fields:
+              - { name: title, label: Caption, widget: string }
+              - { name: category, label: Collection, widget: string, default: Portfolio }
+              - { name: url, label: Photograph, widget: image, choose_url: false }
