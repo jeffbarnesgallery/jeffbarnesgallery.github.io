@@ -67,6 +67,8 @@ html:has(.photo-roll){scroll-snap-type:y proximity;scroll-padding-top:96px}
 
 /* Compact header and breathing room beneath each photograph. */
 .photo-roll{--roll-header:64px}.photo-roll header{padding:8px 4%}.photo-roll header .brand{font-size:22px}.photo-roll header .brand small{font-size:9px;margin-top:4px}.photo-roll #grid .photo{height:calc(100vh - var(--roll-header) - 24px);height:calc(100svh - var(--roll-header) - 24px)}.photo-roll #grid{gap:24px}html:has(.photo-roll){scroll-padding-top:64px}@media(max-width:700px){.photo-roll{--roll-header:64px}.photo-roll header .brand{font-size:20px}.photo-roll header .view-links{gap:10px}.photo-roll header .view-links a{font-size:11px}}
+
+.photo-roll .scroll-hint{position:fixed;right:18px;bottom:18px;z-index:11;display:flex;flex-direction:column;align-items:center;gap:6px;color:#fff;opacity:.24;pointer-events:none}.scroll-hint svg{display:block;width:14px;height:9px}.photo-roll:has(dialog[open]) .scroll-hint{visibility:hidden}
 </style>
 </head><body class="photo-roll">
 <header><a class="brand" href="./">Jeff Barnes<small>PHOTOGRAPHY</small></a><nav class="view-links" aria-label="Main navigation"><a href="./" aria-current="page">Photo roll</a><a href="./portfolio.html">Portfolio grid</a></nav></header>
@@ -82,4 +84,4 @@ html:has(.photo-roll){scroll-snap-type:y proximity;scroll-padding-top:96px}
 
 <dialog class="lightbox" id="viewer" aria-label="Photograph"><button data-close class="close" aria-label="Close photo">×</button><img id="big" alt=""><div class="light-caption"><div><h2 id="photo-title"></h2><p id="photo-category"></p></div></div></dialog>
 
-<noscript><p>Please enable JavaScript to browse the photo gallery.</p></noscript><script src="./app.js?v=photo-navigation-1" defer></script></body></html>
+<noscript><p>Please enable JavaScript to browse the photo gallery.</p></noscript><script src="./app.js?v=photo-navigation-1" defer></script><div class="scroll-hint" role="img" aria-label="Scroll up or down to browse photographs"><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M2 8 8 2 14 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><svg viewBox="0 0 16 10" aria-hidden="true"><path d="M2 2 8 8 14 2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></div></body></html>
